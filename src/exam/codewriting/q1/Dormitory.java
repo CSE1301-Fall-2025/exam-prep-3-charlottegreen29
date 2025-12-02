@@ -46,7 +46,7 @@ public class Dormitory
 	* Returns true if the given room contains a Student, false otherwise
 	*/
 	public boolean isOccupied ( String roomNo ) {
-		return !this.rooms.get(roomNo).equals(null);
+		return this.rooms.get(roomNo)!=null;
 	}
 	
 	/**
@@ -56,8 +56,8 @@ public class Dormitory
 	*/
 	public LinkedList < Integer > getStudentIds () {
 		LinkedList<Integer> ids = new LinkedList<>();
-		for (int i=0; i<this.rooms.size(); i++){
-			ids.add(this.rooms.get(i).getId());
+		for (Student s : this.rooms.values()){
+			ids.add(s.getId());
 		}
 		return ids;
 	}
@@ -68,14 +68,16 @@ public class Dormitory
 		Dormitory dorm = new Dormitory ("Eliot");
 		
 		//Create an instance of Student and add it to the dorm. You can choose which room to add it to.
-		Student me = new Student (601305);
+		Student me = new Student (123456);
 		dorm.addStudent("3010", me);
 
+		System.out.println(dorm.isOccupied("3110"));
+
 		//Write code to determine if a student with the id of 123456 is in your dorm using the appropriate methods.
-		LinkedList <Integer> studentIds = dorm.getStudentIds(); //why am I getting an error here?
+		LinkedList <Integer> studentIds = dorm.getStudentIds();
 		boolean inDorm = false;
 		for (Integer id : studentIds){
-			if (id==123456){
+			if (id == 123456){
 				inDorm = true;
 			}
 		}
