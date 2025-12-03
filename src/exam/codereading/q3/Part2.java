@@ -13,7 +13,7 @@ public class Part2 {
 		map.put(15 , 131);
 		Integer x = 15;
 		while (x!= null) {
-			System.out.println(x);
+			System.out.println(x); // 15 131 0 247 12 but one number each line
 			x = map.get(x);
 		}
 	}

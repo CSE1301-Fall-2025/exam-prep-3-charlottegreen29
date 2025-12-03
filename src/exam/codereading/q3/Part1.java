@@ -15,7 +15,7 @@ public class Part1 {
 			items.add(term1 + term2 );
 		}
 		for (int i = 0; i < items.size(); i ++) {
-			System.out.println (items.get(i));
+			System.out.println (items.get(i)); // 4 9 5 10 8 12 (but one each line)
 		}
 	}
 }

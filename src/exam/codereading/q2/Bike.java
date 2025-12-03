@@ -1,5 +1,7 @@
 package exam.codereading.q2;
 
+// Did in packet in class, which is why you don't see my work
+
 public class Bike {
 	private int maxGear ;
 	private int currentGear ;
@@ -37,9 +39,9 @@ public class Bike {
 		}
 		eighteenSpeed.pedal();
 		System.out.println (tenSpeed.shiftDown(5));
-		Bike huffy = eighteenSpeed ;
+		Bike huffy = eighteenSpeed ; // !!! Note !!! this doesn't make a new object, just a new name for eighteenSpeed
 		huffy.pedal();
-		tenSpeed = huffy ;
+		tenSpeed = huffy ; // !!! Note !!! this makes tenSpeed be another name for huffy, which therefore means all 3 names refer to eighteenSpeed
 		System.out.println ( eighteenSpeed.shiftDown(7));
 		System.out.println ( tenSpeed.shiftDown(7));
 		huffy.pedal();
