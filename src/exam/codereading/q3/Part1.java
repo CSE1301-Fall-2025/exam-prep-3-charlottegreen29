@@ -6,7 +6,7 @@ public class Part1 {
 
 	public static void main(String[] args) {
 		//What will print?
-		LinkedList<Integer> items = new LinkedList<>();
+		LinkedList<Integer> items = new LinkedList<>(); // !!! Note !!! remember that lists and maps must contain objects and not primative data types!
 		items.add (4);
 		items.add (9);
 		for ( int i = 0; i < 4; i ++) {

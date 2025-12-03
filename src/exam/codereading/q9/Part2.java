@@ -19,7 +19,7 @@ public class Part2 {
 
 			while ( x != null ) {
 			    y = days[x.length()];
-			    System.out.println(y);
+			    System.out.println(y); // friday monday saturday wednesday thursday
 			    x = order.get(y);
 			}
 	}

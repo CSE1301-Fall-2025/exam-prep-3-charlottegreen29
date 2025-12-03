@@ -18,7 +18,7 @@ public class Part2 {
 		String y = "hi";
 		while (x != null ) {
 			y = words [x];
-			System.out.println (y);
+			System.out.println (y); // earth wind water fire heart
 			x = order.get(y);
 		}
 	}

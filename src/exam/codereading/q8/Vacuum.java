@@ -36,26 +36,26 @@ public class Vacuum {
     	  
 		Vacuum large = new Vacuum (10);
   
-		System.out.println(small.clean(2));
+		System.out.println(small.clean(2)); //2
   
-		System.out.println(large.clean(4));
+		System.out.println(large.clean(4)); //0
   
 		for(int i = 0; i < 8; i ++) {
 			small.clean(1);
 		}
   
-		System.out.println(large.clean(1));
+		System.out.println(large.clean(1)); //0
   
-		System.out.println(small.clean(1));
+		System.out.println(small.clean(1)); //5
   
 		Vacuum old = large;
   
-		System.out.println(old.clean(1));
+		System.out.println(old.clean(1)); //0
   
 		large.unclog();
   
-		System.out.println(large.clean(2));
+		System.out.println(large.clean(2)); //2
   
-		System.out.println(old.clean(1));
+		System.out.println(old.clean(1)); //3
     }
  }

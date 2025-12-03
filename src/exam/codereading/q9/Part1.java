@@ -19,7 +19,7 @@ public class Part1 {
 		for(int i = 0; i < 5; i++) {
 		    String word = words.get(i);
 		    int next = base / word.length();
-		    System.out.println(next);
+		    System.out.println(next); // 2 0 1 0 2 except new line per number
 		    base = word.length();
 		}
 	}

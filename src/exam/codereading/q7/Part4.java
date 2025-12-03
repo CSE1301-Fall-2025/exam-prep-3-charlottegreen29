@@ -5,11 +5,11 @@ public class Part4 {
 	public static void main(String[] args) {
 		//What gets printed?
 		int [] secret = new int [] { 1, 3, 1 };
-		ComboLock c4 = new ComboLock(secret , 2);
-		System.out.println (c4 );
-		c4.trySoln( new int [] { 1, 2, 3 });
-		c4.trySoln( new int [] { 1, 3, 1 });
-		System.out.println (c4);
+		ComboLock c4 = new ComboLock(secret , 2); // C
+		System.out.println (c4 ); // #0 0 0 0
+		c4.trySoln( new int [] { 1, 2, 3 }); // T: 1/2 \n F
+		c4.trySoln( new int [] { 1, 3, 1 }); // T: 2/2 \n G
+		System.out.println (c4); // #2 1 3 1
 	}
 
 }
