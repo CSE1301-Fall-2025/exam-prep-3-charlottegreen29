@@ -14,10 +14,10 @@ public class Computer {
     
     // Write the constructor for the Computer class. 
     // When a computer is created it should be completely off.
-    
-    
-    
-    
+    public Computer(){
+        this.isOn = false;
+        this.isAsleep = false;
+    }
     
     /**
      * If the button press is short, the computer should go to sleep (but remain on),
@@ -28,7 +28,25 @@ public class Computer {
      * @param longPress true if the button press was long, false if it is short
      */
     public void pushPowerButton(boolean longPress) {
-    	//FIXME
+    	if (longPress){
+            if (this.isOn){
+                this.isOn = false;
+            }
+            else {
+                this.isOn = true;
+            }
+        }
+        else { //if the computer is off, a short press won't do anything
+            if (this.isOn && this.isAsleep){
+                this.isAsleep = false;
+            }
+            else if (this.isOn && !this.isAsleep){
+                this.isAsleep = true;
+            }
+        }
+        if (this.isOn==false){
+            this.isAsleep = false; //aka the computer can't be off and asleep
+        }
     }
     
     // getters and setters

@@ -46,17 +46,17 @@ public class SolarSystem {
 	public static void main(String[] args) {
 		//Write a line of code that creates an instance of the Planet class by calling the constructor. You should
 		//also declare a variable to hold the newly created instance.
-		Planet queibler = new Planet("Queibler", 1);
+		Planet queebler = new Planet("Queebler", 1);
 		
 		//Write a line of code that creates an instance of the SolarSystem class by calling the constructor. You
 		//should also declare a variable to hold the newly created instance.
-		LinkedList <Planet> quibPlanets = new LinkedList<>();
-		SolarSystem quibleria = new SolarSystem("Quibleria",quibPlanets);
+		LinkedList <Planet> queebPlanets = new LinkedList<>();
+		SolarSystem queebleria = new SolarSystem("Queebleria",queebPlanets);
 
 		//Write a line of code that will add the Planet to the SolarSystem
-		quibleria.addPlanet(queibler);
+		queebleria.addPlanet(queebler);
 		
 		//Write a line of code that will retrieve the total mass from the SolarSystem
-		System.out.println(quibleria.getTotalMass());
+		System.out.println(queebleria.getTotalMass());
 	}
 }
