@@ -58,5 +58,6 @@ public class SolarSystem {
 		
 		//Write a line of code that will retrieve the total mass from the SolarSystem
 		System.out.println(queebleria.getTotalMass());
+		System.out.print(queebler);
 	}
 }
